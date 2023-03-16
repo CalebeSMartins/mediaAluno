@@ -19,14 +19,14 @@ public class Program {
 		aluno.nota2 = sc.nextDouble();
 		aluno.nota3 = sc.nextDouble();
 		
-		System.out.printf("Final Grade: %.2f%n", aluno.finalMedia());
+		System.out.printf("Média Final: %.2f%n", aluno.finalMedia());
 		
 		if (aluno.finalMedia() < 60.0) {
-			System.out.println("Failed");
-			System.out.printf("Missing %.2f points%n", aluno.missingPoint());
+			System.out.println("Reprovado");
+			System.out.printf("Faltou %.2f points%n", aluno.missingPoint());
 		} 
 		else {
-			System.out.println("Pass");
+			System.out.println("Aprovado");
 		}
 		sc.close();
 
